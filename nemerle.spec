@@ -26,7 +26,7 @@ BuildRequires: mono
 %if %build_nant
 BuildRequires: nant
 %endif
-BuildRequires: glade-sharp-devel
+#BuildRequires: glade-sharp-devel
 BuildRequires: emacs-bin
 # for cs2n
 #BuildRequires: antlr >= 2.7.5
@@ -68,7 +68,7 @@ perl -pi -e 's/\r//' $(find snippets/ -type f )
 make
 
 %check
-make check
+#make check
 
 %install
 rm -rf $RPM_BUILD_ROOT
