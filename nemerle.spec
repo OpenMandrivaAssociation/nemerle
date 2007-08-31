@@ -36,6 +36,7 @@ Requires: nemerle-libs = %version
 Requires: readline >= 5
 Requires: libtermcap
 BuildArch: noarch
+%define _requires_exceptions ^lib.*
 
 %description
 Nemerle is a new functional language designed from the ground up for
