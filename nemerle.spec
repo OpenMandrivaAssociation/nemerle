@@ -21,6 +21,7 @@ Patch1: nemerle-0.9.3-pkgconfig.patch
 License: BSD
 Group: Development/Other
 Url: http://nemerle.org/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: mono
 %if %build_nant
 BuildRequires: nant
