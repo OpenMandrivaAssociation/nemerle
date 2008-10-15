@@ -1,6 +1,6 @@
 %define name nemerle
 %define version 0.9.3
-%define release %mkrel 5
+%define release %mkrel 4
 #rpmlint false alarm
 #%mklibname
 %if %mdkversion >= 200600
