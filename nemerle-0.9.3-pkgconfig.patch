@@ -1,0 +1,13 @@
+--- nemerle-0.9.3/configure.pkgconfig	2006-05-15 12:57:33.000000000 +0200
++++ nemerle-0.9.3/configure	2006-08-14 14:20:38.000000000 +0200
+@@ -758,8 +758,8 @@
+ try_nunit_version_2 "${monopath}nunit-console2";
+ if test "$nunit"; then
+   echo_result "found, $nunit"
+-  if pkgconfig --exists mono-nunit 2>/dev/null; then
+-    nunit_lib="-pkg:mono-nunit.pc"
++  if pkg-config --exists mono-nunit 2>/dev/null; then
++    nunit_lib="-pkg:mono-nunit"
+   else
+     np=`which nunit-console | sed 's/\(.*\)nunit-conso.*/\1nunit.framework.dll/'`; np=`cygpath -w "$np"`;
+     nunit_lib="-r:\"$np\""

@@ -1,0 +1,8 @@
+--- nemerle-0.3.2/tools/nemerlish/nemish.exe.config.dllimport	2005-05-10 13:05:57.000000000 +0200
++++ nemerle-0.3.2/tools/nemerlish/nemish.exe.config	2005-06-02 13:43:26.935495160 +0200
+@@ -1,3 +1,4 @@
+ <configuration>
+-  <dllmap dll="readline" target="libreadline.so.4" />
++  <dllmap dll="readline" target="libreadline.so.5" />
++  <dllmap dll="termcap" target="libtermcap.so.2" />
+ </configuration>
