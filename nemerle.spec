@@ -20,7 +20,7 @@ Patch: nemerle-0.3.2-readline5.patch
 Patch1: nemerle-0.9.3-pkgconfig.patch
 License: BSD
 Group: Development/Other
-Url: http://nemerle.org/
+Url: https://nemerle.org/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: mono
 %if %build_nant
